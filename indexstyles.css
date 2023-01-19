@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Klavika-bold-italic;
+    src: url(fonts/klavika-bold-italic.otf);
+}
+@font-face {
+    font-family: klavika-medium;
+    src: url(fonts/klavika-medium.otf);
+}
+@font-face {
+    font-family:klavika-bold ;
+    src: url(fonts/klavika-bold.otf);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    width: 100%;
+    
+
+}
+.nav>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 0 0 0;
+}
+.nav img{
+    width: 5%;
+    text-align: center;
+}
+.nav>div:nth-child(1)>p{
+    font-size: 2.5rem;
+    margin: 0 0 0 5px;
+    font-family: Klavika-bold-italic;
+}
+.nav>p{
+    margin: 0;
+    padding-top: 0;
+    font-family: klavika-medium;
+    font-size: 1rem;
+    text-align: center;
+}
+#search{
+    border: 1px solid rgb(190, 186, 186);
+    border-radius: 2px;
+    width: 50%;
+    height: 2rem;
+}
+#search_button{
+    width: 2rem;
+    margin-left: 1rem;
+}
+.orderItems>img{
+    width: 20px;
+}
+.orderItems>img:nth-child(1){
+    width: 10px;
+}
+a{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.first-slider{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    width: 100%;
+    color: white;
+}
+.first-slider>div:nth-child(1){
+    width: 40%;
+    text-align: center;
+    margin: 3% 0 0 10%;
+    font-family: klavika-medium;
+    line-height: 2.5rem;
+}
+.first-slider>div>h1{
+    font-size: 4rem;
+    font-family: klavika-bold;
+}
+
+#conor{
+    opacity: 0.7;
+}
+.second-slider{
+    background-color: rgb(160, 155, 155);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 2%;
+    width: 100%;
+    color: black;
+}
+.second-slider>div:nth-child(1){
+    width: 40%;
+    text-align: center;
+    margin: 3% 0 0 10%;
+    font-family: klavika-medium;
+    line-height: 2.5rem;
+}
+.second-slider>div>h1{
+    font-size: 4rem;
+    font-family: klavika-bold;
+}
+#izzy{
+    height: 464px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(9, 8, 8);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(209, 20, 20, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.slidesBrands{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.smallDiv>img{
+    width: 78px;
+    border-radius: 80px;
+    cursor: pointer;
+    /* margin: 0 30px 0 30px; */
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
