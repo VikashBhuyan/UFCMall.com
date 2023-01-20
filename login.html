@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    /* CSS styles go here */
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-family: 'Klavika Bold';
+}
+
+.returning-customers {
+  align-items: flex-start;
+}
+
+.new-customers {
+  align-items: flex-end;
+}
+
+.login-button, .register-button {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0ch;
+  transition: background-color 0.2s ease;
+}
+
+.login-button:hover, .register-button:hover {
+  background-color: darkgrey;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="inner-div returning-customers">
+      <h1>RETURNING CUSTOMERS</h1>
+      <input type="text">
+      <input type="text">
+      <button class="login-button">LOGIN</button>
+    </div>
+    <div class="inner-div new-customers">
+      <h1>NEW CUSTOMERS</h1>
+      <button class="register-button">REGISTER</button>
+    </div>
+  </div>
+</body>
+</html>
