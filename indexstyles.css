@@ -85,29 +85,7 @@ a{
 #conor{
     opacity: 0.7;
 }
-.second-slider{
-    background-color: rgb(160, 155, 155);
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin-top: 2%;
-    width: 100%;
-    color: black;
-}
-.second-slider>div:nth-child(1){
-    width: 40%;
-    text-align: center;
-    margin: 3% 0 0 10%;
-    font-family: klavika-medium;
-    line-height: 2.5rem;
-}
-.second-slider>div>h1{
-    font-size: 4rem;
-    font-family: klavika-bold;
-}
-#izzy{
-    height: 464px;
-}
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -169,5 +147,65 @@ a{
   from {opacity: .4}
   to {opacity: 1}
 }
+.slideshow-container{
+    margin-top: 2%;
+}
+hr {
+    margin: 30px 0;
+    height: 1px;
+    border: none;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, black));
+}
+#top_Brands{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.second-slider{
+    background-color: rgb(247, 244, 244);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 2%;
+    width: 100%;
+    color: black;
+}
+.second-slider>div{
+    width: 40%;
+    text-align: center;
+    margin: 3% 5% 0 0;
+    font-family: klavika-medium;
+    line-height: 2.5rem;
+}
+.second-slider>div>h1{
+    font-size: 2rem;
+    font-family: klavika-bold;
+}
+#offer{
+    font-size: 4rem;
+}
+#izzy{
+    height: 464px;
+}
+.jewellery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+.jewellery>div{
+    width: 352px;
+    border-radius: 20px;
+    text-align: center;
+}
+.jewellery>div>img:nth-child(1){
+    width: 352px;
+    height: 358px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
+}
+.logos{
+    width: 10%;
+    /* margin-left: 42%;     */
+}
