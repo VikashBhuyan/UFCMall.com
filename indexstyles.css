@@ -17,9 +17,9 @@ body{
 .nav{
     width: 100%;
     
-
+/* padding-bottom: 1%; */
 }
-.nav>div{
+.nav>a>div{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,10 +30,11 @@ body{
     width: 5%;
     text-align: center;
 }
-.nav>div:nth-child(1)>p{
+.nav>a>div:nth-child(1)>p{
     font-size: 2.5rem;
     margin: 0 0 0 5px;
     font-family: Klavika-bold-italic;
+    color: #000;
 }
 .nav>p{
     margin: 0;
@@ -52,11 +53,31 @@ body{
     width: 2rem;
     margin-left: 1rem;
 }
-.orderItems>img{
-    width: 20px;
+.orderItems{
+    margin-top: 2% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+.orderItems img{
+    width: 20px;
+ }
 .orderItems>img:nth-child(1){
     width: 10px;
+} 
+.orderItems>div{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 7%;
+}
+.orderItems a{
+    font-family: klavika-medium;
+    font-weight: lighter;
+    color: black;
+    font-size: 20px;
+    /* margin-left: 10%; */
 }
 a{
     text-decoration: none;
@@ -208,4 +229,37 @@ hr {
 .logos{
     width: 10%;
     /* margin-left: 42%;     */
+}
+.grocery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.grocery>div{
+    width: 22%;
+    text-align: center;
+}
+.grocery img{
+    width: 100%;
+}
+.jew{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.jew>div{
+    width: 22%;
+    text-align: center;
+}
+.jew img{
+    width: 100%;
+}
+.help {
+    display: flex;
+    flex-direction: row;
+}
+.help>img{
+    width: 25%;
 }
