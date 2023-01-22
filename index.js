@@ -63,3 +63,40 @@ function showSlidesThree(n) {
   }
   slides3[slideIndexThree-1].style.display = "block";
 }
+
+
+let pantaloon = document.getElementById("pantaloon");
+pantaloon.addEventListener("click",()=>{
+let itemLs = new Array(2);
+itemLs[0]="https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0x1920/70/4.png?imwidth=320&impolicy=hq";
+itemLs[1]="Pantaloons Gift Card";
+localStorage.setItem("itemLs",JSON.stringify(itemLs));
+location.href="items.html";
+})
+// second 
+// let pantaloon = document.getElementById("pantaloon");
+// pantaloon.addEventListener("click",()=>{
+// let itemLs = new Array(2);
+// itemLs[0]="https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0x1920/70/4.png?imwidth=320&impolicy=hq";
+// itemLs[1]="Pantaloons Gift Card";
+// localStorage.setItem("itemLs",JSON.stringify(itemLs));
+// location.href="items.html";
+// })
+// // third
+// let pantaloon = document.getElementById("pantaloon");
+// pantaloon.addEventListener("click",()=>{
+// let itemLs = new Array(2);
+// itemLs[0]="https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0x1920/70/4.png?imwidth=320&impolicy=hq";
+// itemLs[1]="Pantaloons Gift Card";
+// localStorage.setItem("itemLs",JSON.stringify(itemLs));
+// location.href="items.html";
+// })
+// // forth
+// let pantaloon = document.getElementById("pantaloon");
+// pantaloon.addEventListener("click",()=>{
+// let itemLs = new Array(2);
+// itemLs[0]="https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0x1920/70/4.png?imwidth=320&impolicy=hq";
+// itemLs[1]="Pantaloons Gift Card";
+// localStorage.setItem("itemLs",JSON.stringify(itemLs));
+// location.href="items.html";
+// })

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Items</title>
     <style>
-@font-face {
+            @font-face {
     font-family: Klavika-bold-italic;
     src: url(fonts/klavika-bold-italic.otf);
 }
@@ -19,10 +19,10 @@
     src: url(fonts/klavika-bold.otf);
 }
 body{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-.nav{
+        .nav{
     width: 100%;
     
 padding-bottom: 1%;
@@ -97,16 +97,6 @@ a{
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.container{
-    background-color: #f5f5f5;
-    height: 79vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#inner{
-    width: 50%;
-    margin: auto;
-    text-align: center;
-}
 .conatiner{
     width: 40%;
     display: flex;
@@ -162,36 +152,41 @@ h2{
 </body>
 </html>
 <script>
-    let LStoData = JSON.parse(localStorage.getItem("cartLs"));
-    if(LStoData===null)
+    let itemLs = JSON.parse(localStorage.getItem("itemLs"));
+    let contain = document.querySelector(".conatiner");
+    let img = document.createElement("img");
+    if(itemLs===null)
     {
-        let containerEl = document.querySelector(".conatiner");
-
-        let innerDiv = document.createElement("div");
-        innerDiv.setAttribute("id","inner");
-        let img = document.createElement("img");
-        img.src = "https://assetscdn1.paytm.com/tmalld/empty-cartf2e3895c37dadcc12ef5922424df6007.png";
-        let h1 = document.createElement("h1")
-        h1.innerText="Oops! Your Cart is Empty";
-        let p1 = document.createElement("p");
-        p1.innerText = "Get some amazing products & offers";
-        innerDiv.append(img,h1,p1);
-        containerEl.append(innerDiv)
-
+        img.src = "https://assetscdn1.paytm.com/tmalld/search-iconeec9feffddc2ac0de16d16a4925dcbfe.png";
+        img.setAttribute("id","unavail");
+        // img.width = 
+        let h2 = document.createElement("h2");
+        h2.innerText = "Sorry! Couldn’t find the product you were looking for!!"
+        let div = document.createElement("div");
+        div.append(h2);
+        contain.append(img,div);
     }
     else
     {
-    let contain = document.querySelector(".conatiner");
-    let img = document.createElement("img");
-    img.src = LStoData[0];
+    img.src = itemLs[0];
     let h2 = document.createElement("h2");
-    h2.innerText = LStoData[1];
+    h2.innerText = itemLs[1];
     let btn = document.createElement("button");
     btn.setAttribute("id","boom");
-    btn.innerText="Buy Now";
+    btn.innerText="Add to Cart";
     let div = document.createElement("div");
     div.append(h2,btn);
     contain.append(img,div);
-    }
-    
+    localStorage.removeItem("itemLs");
+    let x = document.getElementById("boom");
+    let cartLs = [];
+    x.addEventListener("click",()=>{
+    img="https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0x1920/70/4.png?imwidth=320&impolicy=hq";
+    name="Pantaloons Gift Card";
+    cartLs.push(img);
+    cartLs.push(name);
+    localStorage.setItem("cartLs",JSON.stringify(cartLs));
+    location.href="bag.html";
+    })
+}
 </script>
