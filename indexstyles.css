@@ -46,7 +46,7 @@ body{
 #search{
     border: 1px solid rgb(190, 186, 186);
     border-radius: 2px;
-    width: 50%;
+    width: 70%;
     height: 2rem;
 }
 #search_button{
@@ -62,15 +62,21 @@ body{
 .orderItems img{
     width: 20px;
  }
-.orderItems>img:nth-child(1){
+.orderItems>div:nth-child(1)>img{
     width: 10px;
 } 
-.orderItems>div{
+.orderItems > div:nth-child(1)
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+.orderItems>div:nth-child(2){
     width: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 7%;
+    margin-left: 0%;
 }
 .orderItems a{
     font-family: klavika-medium;
@@ -158,7 +164,7 @@ a{
     flex-direction: row;
     justify-content: space-evenly;
 }
-.smallDiv>img{
+.smallDiv img{
     width: 78px;
     border-radius: 80px;
     cursor: pointer;
@@ -255,6 +261,16 @@ hr {
 }
 .jew img{
     width: 100%;
+}
+.about{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5rem;
+}
+.about>h1{
+    font-size: 1rem;
+}
+.about>p{
+    font-size: 0.7rem;
 }
 .help {
     display: flex;
